@@ -6,23 +6,16 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
+            "heading": "CREATE WITH CONVENIENCE.",
             "heading_size": "h0"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
           }
         },
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
+            "button_label_1": "SHOP NOW",
+            "button_link_1": "shopify:\/\/collections\/all",
+            "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
@@ -31,180 +24,417 @@
       },
       "block_order": [
         "heading",
-        "text",
         "button"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
+        "image": "shopify:\/\/shop_images\/WhatsApp_Image_2024-03-03_at_09.47.11_3.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-left",
         "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
+        "desktop_content_alignment": "left",
+        "color_scheme": "scheme-2",
+        "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
         "show_text_below": false
       }
     },
-    "rich_text": {
-      "type": "rich-text",
+    "multicolumn_BjkcEP": {
+      "type": "multicolumn",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "column_BrgNGX": {
+          "type": "column",
           "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
+            "title": "Step 1",
+            "text": "<p>Buy our Multimag Dual-Sided Magnet.<\/p>",
+            "link_label": "",
+            "link": ""
           }
         },
-        "text": {
-          "type": "text",
+        "column_jWrDdy": {
+          "type": "column",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "title": "Step 2",
+            "text": "<p>Wait 1-2 business days for shipping.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_hQPMzn": {
+          "type": "column",
+          "settings": {
+            "title": "Step 3",
+            "text": "<p>Receive your product and be exposed to endless angles in creating your content.<\/p>",
+            "link_label": "",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "heading",
-        "text"
+        "column_BrgNGX",
+        "column_jWrDdy",
+        "column_hQPMzn"
       ],
       "settings": {
-        "color_scheme": "scheme-1",
+        "desktop_content_position": "center",
+        "title": "Transform Your Content Creation Process",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_GHcR3B": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_U8Vc8F": {
+          "type": "heading",
+          "settings": {
+            "heading": "Convenient Content Creation. Anywhere.",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_U8Vc8F"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
         "full_width": true,
-        "padding_top": 40,
+        "padding_top": 20,
         "padding_bottom": 0
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
+    "multirow_xWdapJ": {
+      "type": "multirow",
+      "blocks": {
+        "row_WmD93g": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/6896b182-d02a-4f97-bc83-672525bb1b0e.jpg",
+            "caption": "",
+            "heading": "Designed for Convenience",
+            "text": "<p>Designed to be discreet and portable, the<br\/>MULTIMAG easily fits into your pocket, making it the perfect accessory for<br\/>creators on the go who value both functionality and convenience.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_wUNrxn": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/WhatsApp_Image_2024-03-01_at_11.24.02.jpg",
+            "caption": "",
+            "heading": "Easy Setup",
+            "text": "<p>Find a metal surface, throw your Multimag in, and film.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_WmD93g",
+        "row_wUNrxn"
+      ],
       "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "color_scheme": "scheme-1",
-        "show_view_all": false,
-        "swipe_on_mobile": false,
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "columns_mobile": "2",
-        "padding_top": 28,
+        "image_height": "large",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
         "padding_bottom": 36
       }
     },
-    "collage": {
+    "image_with_text_hVibdc": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_zRejRY": {
+          "type": "heading",
+          "settings": {
+            "heading": "Low-effort usage",
+            "heading_size": "h1"
+          }
+        },
+        "text_MAXmNm": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use this tool from the palm of your hand.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_ExDPyw": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop now",
+            "button_link": "shopify:\/\/products\/multimag-magnet-final",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_zRejRY",
+        "text_MAXmNm",
+        "button_ExDPyw"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/f0836e20-106b-4d7f-a512-fb92796ea7a9.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "scheme-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multirow_AUzfU7": {
+      "type": "multirow",
+      "blocks": {
+        "row_BPCKYR": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/e6f71126-438d-4673-b318-364af2a8b5a8.jpg",
+            "caption": "",
+            "heading": "<strong>Dual 360° Swivel Mechanism<\/strong>",
+            "text": "<p>With two pivot points for complete rotational freedom, the MULTIMAG ensures you can quickly find the best angles for your shots, whether you're recording a workout, a culinary masterpiece, or a scenic drive.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_3NY4K7": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4a5e25ff-0c35-419d-85a7-2f8d4f2b6ab8.jpg",
+            "caption": "",
+            "heading": "<strong>Ultra-Strong N52 Magnets<\/strong>",
+            "text": "<p>Engineered for stability, and stronger than N50 Magnets, its predecessor, the MULTIMAG attaches securely to any metal surface, providing peace of mind so you can create with confidence.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_W3YQJG": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/WhatsApp_Image_2024-03-01_at_11.24.03_2.jpg",
+            "caption": "",
+            "heading": "Portable Size",
+            "text": "<p>Ultra-portable size that makes it easy for you to carry it around when creating videos.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_BPCKYR",
+        "row_3NY4K7",
+        "row_W3YQJG"
+      ],
+      "settings": {
+        "image_height": "adapt",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_CUERyq": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_N8YnDY": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I use this in the gym?",
+            "icon": "check_mark",
+            "row_content": "<p>Absolutely, this is a much better option that your typical bulky phone tripod.<br\/><br\/>This can be used anywhere on anything that has a metal surface. Additionally it comes with magnet pieces that can be used for non-magnetic surfaces.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_AzEmpr": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How long is shipping?",
+            "icon": "check_mark",
+            "row_content": "<p>We ship products within a 24 hour period upon confirmation of order.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_w9fJiQ": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do I need a bag for this?",
+            "icon": "check_mark",
+            "row_content": "<p>Not at all! The Multimag magnet is  convenient because of it's pocket-size portability.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_MHdVGg": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Who is this product for?",
+            "icon": "check_mark",
+            "row_content": "<p>The Multimag Double-Sided Magnet is ideal for:<\/p><ul><li>Gym Goers: Capture your workouts without the need for bulky equipment or precarious phone balancing acts.<\/li><li>Food Bloggers: Document your culinary journey hands-free, focusing on your craft while capturing every detail.<\/li><li>Car Enthusiasts: Transform your vehicle into a mobile studio with the MULTIMAG secure and adjustable car mount feature.<\/li><li>Content Creators or anyone who doesn't want to miss a photo opportunity when outdoors.<\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "collapsible_row_wEpaxA": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What does it come with?",
+            "icon": "check_mark",
+            "row_content": "<ul><li>1 dual 360 swivel magnet<\/li><li>2 sticker magnetic pieces (1 for your phone, and 1 for any non-magnetic surface)<\/li><\/ul>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_N8YnDY",
+        "collapsible_row_AzEmpr",
+        "collapsible_row_w9fJiQ",
+        "collapsible_row_MHdVGg",
+        "collapsible_row_wEpaxA"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Frequently Asked Questions",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collage_BqC7hc": {
       "type": "collage",
       "blocks": {
-        "collection-0": {
-          "type": "collection",
+        "image_AQAKnz": {
+          "type": "image",
           "settings": {
-            "collection": ""
+            "image": "shopify:\/\/shop_images\/C9B482F3-8DDC-41E4-81AD-491F043EFFEC.jpg"
           }
         },
-        "product": {
-          "type": "product",
+        "image_9hMUXM": {
+          "type": "image",
           "settings": {
-            "product": "",
-            "second_image": false
+            "image": "shopify:\/\/shop_images\/53E074E6-B5A5-4D25-B48A-90536A0F51FB.jpg"
           }
         },
-        "collection-1": {
-          "type": "collection",
+        "image_hxnD7r": {
+          "type": "image",
           "settings": {
-            "collection": ""
+            "image": "shopify:\/\/shop_images\/08D3291A-ACBE-4E71-B17E-D27B353FBC57.jpg"
           }
         }
       },
       "block_order": [
-        "collection-0",
-        "product",
-        "collection-1"
+        "image_AQAKnz",
+        "image_9hMUXM",
+        "image_hxnD7r"
       ],
       "settings": {
-        "heading": "Multimedia collage",
-        "heading_size": "h2",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "color_scheme": "scheme-1",
+        "heading": "Multimag in action",
+        "heading_size": "h0",
+        "desktop_layout": "right",
+        "mobile_layout": "column",
+        "card_styles": "none",
+        "color_scheme": "",
         "padding_top": 36,
         "padding_bottom": 36
       }
     },
-    "video": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "heading_size": "h1",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "scheme-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "multicolumn": {
-      "type": "multicolumn",
+    "image_banner_gxe7yU": {
+      "type": "image-banner",
       "blocks": {
-        "column1": {
-          "type": "column",
+        "heading_xjPani": {
+          "type": "heading",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "heading": "What are you waiting for?",
+            "heading_size": "h1"
           }
         },
-        "column2": {
-          "type": "column",
+        "text_rHtxji": {
+          "type": "text",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "text": "Kickstart your content creation with <strong>MULTIMAG<\/strong>.",
+            "text_style": "body"
           }
         },
-        "column3": {
-          "type": "column",
+        "buttons_qgt7Ck": {
+          "type": "buttons",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "button_label_1": "Buy Now",
+            "button_link_1": "shopify:\/\/products\/multimag-magnet-final",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
           }
         }
       },
       "block_order": [
-        "column1",
-        "column2",
-        "column3"
+        "heading_xjPani",
+        "text_rHtxji",
+        "buttons_qgt7Ck"
       ],
       "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": false,
-        "color_scheme": "scheme-1",
-        "columns_mobile": "1",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "image": "shopify:\/\/shop_images\/WhatsApp_Image_2024-03-03_at_09.49.07_1.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
       }
     }
   },
   "order": [
     "image_banner",
-    "rich_text",
-    "featured_collection",
-    "collage",
-    "video",
-    "multicolumn"
+    "multicolumn_BjkcEP",
+    "rich_text_GHcR3B",
+    "multirow_xWdapJ",
+    "image_with_text_hVibdc",
+    "multirow_AUzfU7",
+    "collapsible_content_CUERyq",
+    "collage_BqC7hc",
+    "image_banner_gxe7yU"
   ]
 }
