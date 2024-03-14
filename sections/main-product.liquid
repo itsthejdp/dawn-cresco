@@ -84,6 +84,17 @@
             {%- case block.type -%}
               {%- when '@app' -%}
                 {% render block %}
+              {% when 'share-2'%}
+                  {% render 'share-2' %}              
+                  <a class="product-share" onclick="toggleSocialSharingModal()">Share Product</a>
+              {% when 'question-modal' %}
+                  <a href="#popup" style="color: black;" class="btn">Ask a Question</a>
+                  <div id="popup" class="popup">
+                    <a href="#" class="close">&times;</a>
+                    <h3> Ask a Question </h3>
+                    {% render 'contact-form-snippet' %}
+                    <a href="#" class="close-popup"></a>
+                  </div>
               {%- when 'text' -%}
                 <p
                   class="product__text inline-richtext{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
@@ -783,6 +794,14 @@
   "blocks": [
     {
       "type": "@app"
+    },
+    {
+      "type": "share-2",
+      "name": "Share 2"
+    },
+    {
+      "type": "question-modal",
+      "name": "Question Modal"
     },
     {
       "type": "text",

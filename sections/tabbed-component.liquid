@@ -1,0 +1,257 @@
+<style>
+  /* Section */
+
+  .ed_tabs-section {
+    --border-color: #dbdbdb;
+    --border-color-hover: #363636;
+    --border-color-active: #3273dc;
+  }
+
+  .ed_tabs-section {
+    padding: 20px;
+  }
+
+  /* Tab controls */
+
+  nav.ed_tabs {
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 1.5rem;
+    align-items: stretch;
+    display: flex;
+    font-size: 1rem;
+    justify-content: space-between;
+    overflow: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+
+  .ed_tabs-wrapper {
+    position: relative;
+  }
+  .ed_tabs-wrapper.is-overflowing:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50px; /* Width of the gradient overlay */
+    background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1) 100%);
+    pointer-events: none; /* Allow mouse events like scrolling to pass through this overlay */
+  }
+
+  nav.ed_tabs ul {
+    align-items: center;
+    border-bottom-color: var(--border-color);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+    justify-content: flex-start;
+  }
+
+  nav.ed_tabs ul li {
+    display: block;
+  }
+
+  nav.ed_tabs ul li a {
+    text-decoration: none;
+    align-items: center;
+    border-bottom-color: var(--border-color);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    color: #4a4a4a;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -1px;
+    padding: 0.5em 1em;
+    vertical-align: top;
+  }
+
+  nav.ed_tabs ul li a:hover {
+    border-bottom-color: var(--border-color-hover);
+    color: var(--border-color-hover);
+  }
+
+  nav.ed_tabs ul li.is-active a {
+    border-bottom-color: var(--border-color-active);
+    color: var(--border-color-active);
+  }
+
+  /* Tab content */
+
+  .tab-heading {
+    font-size: {{ section.settings.tabheading_font_size }}px
+  }
+
+  .ed_tab-content {
+    display: none;
+    padding: 0 18px;
+  }
+  .ed_tab-content.is-active {
+    display: block;
+  }
+</style>
+<div class="ed_tabs-section">
+  <div class="ed_tabs-wrapper">
+    <nav class="ed_tabs">
+      <ul>
+        <li class="is-active">
+          <a class="tab-heading" href="#ed_tab-one">{{ section.settings.tab_heading_1 }}</a>
+        </li>
+        <li>
+          <a class="tab-heading" href="#ed_tab-two">{{ section.settings.tab_heading_2 }}</a>
+        </li>
+        <li>
+          <a class="tab-heading" href="#ed_tab-three">{{ section.settings.tab_heading_3 }}</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="ed_tab-content is-active" id="ed_tab-one">
+    <p>
+      {{ section.settings.tab_body_1 }}</p>
+  </div>
+  <div class="ed_tab-content" id="ed_tab-two">
+    <p>{{ section.settings.tab_body_2 }}</p>
+  </div>
+  <div class="ed_tab-content" id="ed_tab-three">
+    <p>
+      {{ section.settings.tab_body_3 }}
+    </p>
+  </div>
+
+</div>
+<script>
+  (function() {
+
+    const tabs = document.querySelectorAll(".ed_tabs li");
+    const tabContents = document.querySelectorAll(".ed_tab-content");
+
+    tabs.forEach(tab => {
+      tab.addEventListener("click", e => {
+        e.preventDefault();
+        removeActiveTab();
+        addActiveTab(tab);
+      });
+    })
+
+    const removeActiveTab = () => {
+      tabs.forEach(tab => {
+        tab.classList.remove("is-active");
+      });
+      tabContents.forEach(tabContent => {
+        tabContent.classList.remove("is-active");
+      });
+    }
+
+    const addActiveTab = tab => {
+      tab.classList.add("is-active");
+      const href = tab.querySelector("a").getAttribute("href");
+      const matchingContents = document.querySelector(href);
+      matchingContents.classList.add("is-active");
+    }
+
+// responsive tabs
+
+    const detectOverflowOnMobile = () => {
+
+      const wrapper = document.querySelector(".ed_tabs-wrapper");
+      const nav = document.querySelector("nav.ed_tabs");
+      const ul = nav.querySelector("ul");
+
+      const navWidth = nav.offsetWidth;
+      const ulWidth = ul.scrollWidth;
+
+      if (ulWidth > navWidth) {
+        wrapper.classList.add('is-overflowing');
+      } else {
+        wrapper.classList.remove('is-overflowing');
+      }
+    }
+
+    const debounce = (func, wait) => {
+      let timeout;
+
+      return(...args) => {
+        const later = () => {
+          clearTimeout(timeout);
+          func(...args);
+        };
+
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+      };
+    };
+
+    detectOverflowOnMobile();
+    window.addEventListener('resize', debounce(detectOverflowOnMobile, 250));
+
+  })();
+</script>
+
+{% schema %}
+  {
+    "name": "Tabbed Component",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "tab_heading_1",
+        "label": "Tab Heading 1",
+        "default": "Tab 1"
+      },
+      {
+        "type": "text",
+        "id": "tab_heading_2",
+        "label": "Tab Heading 2",
+        "default": "Tab 2"
+      },
+      {
+        "type": "text",
+        "id": "tab_heading_3",
+        "label": "Tab Heading 3",
+        "default": "Tab 3"
+      },
+      {
+        "type": "text",
+        "id": "tab_body_1",
+        "label": "Tab 1 Body Text",
+        "default": "Lorem ipsum dolor 1"
+      }, {
+        "type": "text",
+        "id": "tab_body_2",
+        "label": "Tab 2 Body Text",
+        "default": "Lorem ipsum dolor 2"
+      }, 
+      {
+        "type": "text",
+        "id": "tab_body_3",
+        "label": "Tab 3 Body Text",
+        "default": "Lorem ipsum dolor 3"
+      },
+      {
+        "type": "range",
+        "id": "tabheading_font_size",
+        "min": 16,
+        "max": 24,
+        "label": "Heading Font Size",
+        "default": 20,
+        "step": 2
+      }
+    ],
+    "presets": [
+      {
+        "name": "Tabbed Component"
+      }
+    ]
+  }
+{% endschema %}

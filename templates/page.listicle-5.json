@@ -1,0 +1,286 @@
+{
+    "sections": {
+      "rich_text_eVYfTK": {
+        "type": "rich-text",
+        "blocks": {
+          "heading_XJR4wn": {
+            "type": "heading",
+            "settings": {
+              "heading": "5 Reasons Why PRODUCT NAME is the OUTCOME YOU PLAN TO GIVE YOUR CUSTOMER",
+              "heading_size": "hxl"
+            }
+          },
+          "caption_qVnP3z": {
+            "type": "caption",
+            "settings": {
+              "caption": "Summary: You can care for your masculinity.",
+              "text_style": "subtitle",
+              "text_size": "large"
+            }
+          }
+        },
+        "block_order": [
+          "heading_XJR4wn",
+          "caption_qVnP3z"
+        ],
+        "settings": {
+          "desktop_content_position": "center",
+          "content_alignment": "left",
+          "color_scheme": "",
+          "full_width": true,
+          "padding_top": 40,
+          "padding_bottom": 52
+        }
+      },
+      "image_with_text_GpnU9E": {
+        "type": "image-with-text",
+        "blocks": {
+          "heading_i8GDdq": {
+            "type": "heading",
+            "settings": {
+              "heading": "1. FIRST BENEFIT",
+              "heading_size": "h1"
+            }
+          },
+          "text_wUjd76": {
+            "type": "text",
+            "settings": {
+              "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+              "text_style": "body"
+            }
+          }
+        },
+        "block_order": [
+          "heading_i8GDdq",
+          "text_wUjd76"
+        ],
+        "settings": {
+          "height": "adapt",
+          "desktop_image_width": "medium",
+          "layout": "image_first",
+          "desktop_content_position": "top",
+          "desktop_content_alignment": "left",
+          "content_layout": "no-overlap",
+          "section_color_scheme": "",
+          "color_scheme": "",
+          "image_behavior": "none",
+          "mobile_content_alignment": "left",
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      },
+      "image_with_text_FXeEAP": {
+        "type": "image-with-text",
+        "blocks": {
+          "heading_UJ8ngJ": {
+            "type": "heading",
+            "settings": {
+              "heading": "2",
+              "heading_size": "h1"
+            }
+          },
+          "text_cehjTd": {
+            "type": "text",
+            "settings": {
+              "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+              "text_style": "body"
+            }
+          }
+        },
+        "block_order": [
+          "heading_UJ8ngJ",
+          "text_cehjTd"
+        ],
+        "settings": {
+          "height": "adapt",
+          "desktop_image_width": "medium",
+          "layout": "image_first",
+          "desktop_content_position": "top",
+          "desktop_content_alignment": "left",
+          "content_layout": "no-overlap",
+          "section_color_scheme": "",
+          "color_scheme": "",
+          "image_behavior": "none",
+          "mobile_content_alignment": "left",
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      },
+      "image_with_text_XcjyeQ": {
+        "type": "image-with-text",
+        "blocks": {
+          "heading_fVwrUc": {
+            "type": "heading",
+            "settings": {
+              "heading": "3",
+              "heading_size": "h1"
+            }
+          },
+          "text_e9bFeg": {
+            "type": "text",
+            "settings": {
+              "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+              "text_style": "body"
+            }
+          }
+        },
+        "block_order": [
+          "heading_fVwrUc",
+          "text_e9bFeg"
+        ],
+        "settings": {
+          "height": "adapt",
+          "desktop_image_width": "medium",
+          "layout": "image_first",
+          "desktop_content_position": "top",
+          "desktop_content_alignment": "left",
+          "content_layout": "no-overlap",
+          "section_color_scheme": "",
+          "color_scheme": "",
+          "image_behavior": "none",
+          "mobile_content_alignment": "left",
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      },
+      "image_with_text_nFN49r": {
+        "type": "image-with-text",
+        "blocks": {
+          "heading_7YWt9C": {
+            "type": "heading",
+            "settings": {
+              "heading": "4",
+              "heading_size": "h1"
+            }
+          },
+          "text_piibPg": {
+            "type": "text",
+            "settings": {
+              "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+              "text_style": "body"
+            }
+          }
+        },
+        "block_order": [
+          "heading_7YWt9C",
+          "text_piibPg"
+        ],
+        "settings": {
+          "height": "adapt",
+          "desktop_image_width": "medium",
+          "layout": "image_first",
+          "desktop_content_position": "top",
+          "desktop_content_alignment": "left",
+          "content_layout": "no-overlap",
+          "section_color_scheme": "",
+          "color_scheme": "",
+          "image_behavior": "none",
+          "mobile_content_alignment": "left",
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      },
+      "image_with_text_iNVDjr": {
+        "type": "image-with-text",
+        "blocks": {
+          "heading_8KcjnJ": {
+            "type": "heading",
+            "settings": {
+              "heading": "5",
+              "heading_size": "h1"
+            }
+          },
+          "text_mPqqpm": {
+            "type": "text",
+            "settings": {
+              "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+              "text_style": "body"
+            }
+          }
+        },
+        "block_order": [
+          "heading_8KcjnJ",
+          "text_mPqqpm"
+        ],
+        "settings": {
+          "height": "adapt",
+          "desktop_image_width": "medium",
+          "layout": "image_first",
+          "desktop_content_position": "top",
+          "desktop_content_alignment": "left",
+          "content_layout": "no-overlap",
+          "section_color_scheme": "",
+          "color_scheme": "",
+          "image_behavior": "none",
+          "mobile_content_alignment": "left",
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      },
+      "image_with_text_RQedcT": {
+        "type": "image-with-text",
+        "blocks": {
+          "heading_FbkABd": {
+            "type": "heading",
+            "settings": {
+              "heading": "UP TO 59% OFF FOR A LIMITED TIME ONLY!",
+              "heading_size": "h1"
+            }
+          },
+          "text_7Rw3CP": {
+            "type": "text",
+            "settings": {
+              "text": "<p>This limited-time deal is in high demand and stock keeps selling out<\/p>",
+              "text_style": "body"
+            }
+          },
+          "button_FCa3D7": {
+            "type": "button",
+            "settings": {
+              "button_label": "Get 59% Off!",
+              "button_link": "shopify:\/\/products\/multimag-dual-magnet-phone-holder",
+              "button_style_secondary": false
+            }
+          },
+          "caption_q9fGwL": {
+            "type": "caption",
+            "settings": {
+              "caption": "Deal ending in TIMER",
+              "text_style": "caption-with-letter-spacing",
+              "text_size": "medium"
+            }
+          }
+        },
+        "block_order": [
+          "heading_FbkABd",
+          "text_7Rw3CP",
+          "button_FCa3D7",
+          "caption_q9fGwL"
+        ],
+        "settings": {
+          "height": "adapt",
+          "desktop_image_width": "large",
+          "layout": "image_first",
+          "desktop_content_position": "middle",
+          "desktop_content_alignment": "center",
+          "content_layout": "no-overlap",
+          "section_color_scheme": "",
+          "color_scheme": "",
+          "image_behavior": "none",
+          "mobile_content_alignment": "left",
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      }
+    },
+    "order": [
+      "rich_text_eVYfTK",
+      "image_with_text_GpnU9E",
+      "image_with_text_FXeEAP",
+      "image_with_text_XcjyeQ",
+      "image_with_text_nFN49r",
+      "image_with_text_iNVDjr",
+      "image_with_text_RQedcT"
+    ]
+  }
+  

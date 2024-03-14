@@ -1,0 +1,16 @@
+<div id="socialSharingModal" class="social-sharing-modal hidden">
+  <div class="cc-modal-content">
+    <button class="modal-close-button" onclick="toggleSocialSharingModal()">&times;</button>
+    <h2 class="cc-modal-heading">Share This Product</h2>
+    <div class="cc-modal-field">
+      <input type="text" value="" id="productUrl" readonly>
+      <button class="cc-modal-button" onclick="copyProductUrl()">Copy URL</button>
+    </div>
+    <div class="social-links">
+      <a href="#" id="facebookShare" target="_blank" class="cc-social-link"> {% render 'icon-facebook' %}</a>
+      <a href="#" id="pinterestShare" target="_blank" class="cc-social-link">{% render 'icon-pinterest' %}</a>
+      <a href="#" id="twitterShare" target="_blank" class="cc-social-link">{% render 'icon-twitter' %}</a>
+
+    </div>
+  </div>
+</div>
