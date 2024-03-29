@@ -9,6 +9,37 @@
   </div>
 </div>
 
+<!-- Place this HTML where you want the button to appear -->
+<button id="buyNowBtn">Buy Now</button>
+
+<!-- Add this script tag to your Shopify theme's <head> tag or before the closing </body> tag -->
+<script>
+document.getElementById('buyNowBtn').addEventListener('click', function() {
+  var variantId = '44504494244096'; // Replace with your product's default variant ID
+  var quantity = 1;
+
+  fetch('/cart/add.js', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      items: [{
+        id: variantId,
+        quantity: quantity
+      }]
+    }),
+  })
+  .then(response => response.json())
+  .then(data => {
+    window.location.href = '/checkout';
+  })
+  .catch((error) => {
+    console.error('Error:', error);
+  });
+});
+</script>
+
 
 {% schema %}
   {
