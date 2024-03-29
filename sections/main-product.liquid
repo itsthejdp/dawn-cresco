@@ -18,6 +18,21 @@
     {{ 'component-volume-pricing.css' | asset_url | stylesheet_tag }}
   {%- endif -%}
 
+  {% style %}
+    .banner_bullets {
+      background: url('{{ section.settings.bullet_icon | image_url }}') left center no-repeat;
+      background-size: 24px 24px;
+      padding-left: 2em;
+      list-style-type: none !important;
+    }
+    
+    @media screen and (max-width: 749px) {
+      .banner_bullets {
+          padding-left: 5px;
+        }
+    }
+  {% endstyle %}
+
   {%- style -%}
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;

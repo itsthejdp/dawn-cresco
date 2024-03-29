@@ -1,0 +1,25 @@
+
+<div class="isolate{% unless section.settings.full_width %} page-width{% endunless %}">
+<div class="section content-container color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} section--full-width content-container--full-width{% endif %} section-{{ section.id }}-padding">
+  <div class="section__wrapper section__wrapper--{{ section.settings.desktop_content_position }}{% if section.settings.full_width %} page-width{% endif %}">
+    <div class="section-name-content {{ section.settings.content_alignment }}">
+      <a href="/checkout">Instant Checkout</a>
+    </div>
+      </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Instant Checkout Button",
+    "tag": "section",
+    "class": "section",
+    "settings": [ /* Code goes here */ ],
+    "presets": [
+      {
+        "name": "Instant Checkout"
+      }
+    ]
+  }
+  {% endschema %}
