@@ -55,10 +55,91 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "video_with_text_98E6PV": {
+      "type": "video-with-text",
+      "blocks": {
+        "heading_RM6rqD": {
+          "type": "heading",
+          "settings": {
+            "heading": "Video with Text"
+          }
+        },
+        "button_amTfPj": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_RM6rqD",
+        "button_amTfPj"
+      ],
+      "settings": {
+        "video_url": "",
+        "section_color_scheme": "background-1",
+        "content_layout": "no-overlap",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "desktop_video_width": "large",
+        "media_alignment": "center",
+        "desktop_media_position": "left"
+      }
+    },
+    "image_with_text_aJi4HB": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_MYgGPh": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "text_8hcPQx": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_FnTPhN": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_MYgGPh",
+        "text_8hcPQx",
+        "button_FnTPhN"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
-    "media_with_text_UeCW6H"
+    "media_with_text_UeCW6H",
+    "video_with_text_98E6PV",
+    "image_with_text_aJi4HB"
   ]
 }
