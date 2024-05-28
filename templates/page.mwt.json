@@ -84,9 +84,9 @@
         "content_layout": "no-overlap",
         "padding_top": 36,
         "padding_bottom": 36,
-        "desktop_video_width": "large",
-        "media_alignment": "center",
-        "desktop_media_position": "left"
+        "desktop_video_width": "medium",
+        "media_alignment": "left",
+        "desktop_media_position": "right"
       }
     },
     "image_with_text_aJi4HB": {
