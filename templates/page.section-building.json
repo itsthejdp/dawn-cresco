@@ -19,6 +19,26 @@
     },
     "comparison3_PiqcW8": {
       "type": "comparison3",
+      "blocks": {
+        "feature_qxLn3R": {
+          "type": "feature",
+          "settings": {
+            "feature_name": "Feature",
+            "competitor_check_or_x": "h1"
+          }
+        },
+        "feature_FBexce": {
+          "type": "feature",
+          "settings": {
+            "feature_name": "Feature",
+            "competitor_check_or_x": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "feature_qxLn3R",
+        "feature_FBexce"
+      ],
       "settings": {
         "comparison_heading": "Why We're Better",
         "comparison_subtitle": "Lorem ipsum dolor sit amet consectetur adipiscing elit, sapien sem vestibulum natoque augue vehicula, ligula luctus imperdiet primis curabitur hendrerit.",
