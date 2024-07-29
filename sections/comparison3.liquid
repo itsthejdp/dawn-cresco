@@ -1,0 +1,145 @@
+{{ 'section-comparison-icon.css' | asset_url | stylesheet_tag }}
+
+<div class="section-template--19629929759049__a233f8c7-e20b-4b37-89c7-465b0031f050 product-other-template--19629929759049__a233f8c7-e20b-4b37-89c7-465b0031f050 page-width">
+    <div class="section-template--19629929759049__a233f8c7-e20b-4b37-89c7-465b0031f050-settings">      
+        <h2 class="product-other-heading-template--19629929759049__a233f8c7-e20b-4b37-89c7-465b0031f050">{{ section.settings.comparison_heading }}</h2>      
+        <p> {{ section.settings.comparison_subtitle }} </p>
+        <div class="product-other-body-template--19629929759049__a233f8c7-e20b-4b37-89c7-465b0031f050">
+            <div class="product-other-grid-template--19629929759049__a233f8c7-e20b-4b37-89c7-465b0031f050 product-other-grid-header-template--19629929759049__a233f8c7-e20b-4b37-89c7-465b0031f050">
+                <div class="product-other-item-template--19629929759049__a233f8c7-e20b-4b37-89c7-465b0031f050"></div>
+                <div class="product-other-item-template--19629929759049__a233f8c7-e20b-4b37-89c7-465b0031f050 active">
+                    <h3>{{ section.settings.our_product_name }}</h3>
+                </div>
+                <div class="product-other-item-template--19629929759049__a233f8c7-e20b-4b37-89c7-465b0031f050">
+                    <h3>{{ section.settings.competitor_product_name }}</h3>
+                </div>                                
+            </div>
+            {% for block in section.blocks %}
+            <div class="product-other-grid-template--19629929759049__a233f8c7-e20b-4b37-89c7-465b0031f050 product-other-grid-rows-template--19629929759049__a233f8c7-e20b-4b37-89c7-465b0031f050" {{ block.shopify_attributes }}>
+                <div class="product-other-item-template--19629929759049__a233f8c7-e20b-4b37-89c7-465b0031f050">
+                    <h3>{{ block.settings.feature_name }}</h3>
+                </div>
+                <div class="product-other-item-template--19629929759049__a233f8c7-e20b-4b37-89c7-465b0031f050 active">
+                    <div class="product-other-icon-template--19629929759049__a233f8c7-e20b-4b37-89c7-465b0031f050 icon-yes-template--19629929759049__a233f8c7-e20b-4b37-89c7-465b0031f050">                                
+                        <svg width="123" height="123" viewBox="0 0 123 123" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_3)">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M61.44 0C95.373 0 122.881 27.507 122.881 61.439C122.881 95.372 95.373 122.879 61.44 122.879C27.508 122.88 0 95.372 0 61.439C0 27.507 27.508 0 61.44 0ZM34.106 67.678L34.091 67.664C33.306 66.946 32.884 65.979 32.835 64.995C32.786 64.013 33.11 63.01 33.819 62.218C33.829 62.207 33.838 62.197 33.848 62.187C34.565 61.403 35.532 60.98 36.516 60.931C37.505 60.882 38.514 61.211 39.308 61.929L52.264 73.677L83.353 41.118C84.093 40.342 85.076 39.938 86.072 39.914C87.064 39.889 88.066 40.243 88.843 40.981C89.62 41.72 90.023 42.706 90.048 43.7C90.073 44.693 89.718 45.697 88.98 46.473L55.279 81.769C55.256 81.793 55.231 81.816 55.206 81.836C54.491 82.551 53.557 82.931 52.608 82.966C51.634 83.003 50.645 82.673 49.864 81.966L34.118 67.688L34.106 67.678Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_1_3">
+                              <rect width="122.881" height="122.88" fill="black"/>
+                            </clipPath>
+                            </defs>
+                        </svg>             
+                    </div>
+                </div>
+                <div class="product-other-item-template--19629929759049__a233f8c7-e20b-4b37-89c7-465b0031f050">
+                    <div class="product-other-icon-template--19629929759049__a233f8c7-e20b-4b37-89c7-465b0031f050 icon-yes-template--19629929759049__a233f8c7-e20b-4b37-89c7-465b0031f050">                                  
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
+                            <path d="M 4.7070312 3.2929688 L 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 L 4.7070312 20.707031 L 12 13.414062 L 19.292969 20.707031 L 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 L 19.292969 3.2929688 L 12 10.585938 L 4.7070312 3.2929688 z"/>
+                        </svg>   
+                    </div>
+                </div>                                      
+            </div>                                    
+            {% endfor %}
+        </div>
+    </div>
+</div>
+               
+{% schema %}
+  {
+    "name": "Comparison (Icon Only)",
+    "settings": [
+        {
+        "type": "text",
+        "id": "comparison_heading",
+        "label": "Comparison Heading",
+        "default": "Why We're Better"
+        },
+        {
+        "type": "text",
+        "id": "comparison_subtitle",
+        "label": "Comparison Section Subtitle",
+        "default": "Lorem ipsum dolor sit amet consectetur adipiscing elit, sapien sem vestibulum natoque augue vehicula, ligula luctus imperdiet primis curabitur hendrerit."
+        },
+        {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_size.options__1.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_size.options__2.label"
+        },
+        {
+          "value": "h0",
+          "label": "t:sections.all.heading_size.options__3.label"
+        }
+      ],
+      "default": "h1",
+      "label": "t:sections.all.heading_size.label"
+    },
+        {
+        "type": "text",
+        "id": "our_product_name",
+        "label": "Your Product's Name",
+        "default": "Our Product"
+        },
+        {
+        "type": "image_picker",
+        "id": "store_product_image",
+        "label": "Store Product Image"
+        },        
+        {
+        "type": "text",
+        "id": "competitor_product_name",
+        "label": "Competitor Product Name",
+        "default": "Competitor's Product"
+        },
+        {
+        "type": "image_picker",
+        "id": "competitor_product_image",
+        "label": "Competitor Product Image"
+        }    
+    ],
+    "blocks": [
+        {
+            "type": "feature",
+            "name": "Feature",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "feature_name",
+                    "label": "Feature",
+                    "default": "Feature"
+                },                 
+              {
+                    "type": "select",
+                    "id": "competitor_check_or_x",
+                    "options": [
+                      {
+                        "value": "h2",
+                        "label": "Yes"
+                      },
+                      {
+                        "value": "h1",
+                        "label": "No"
+                      }                
+                    ],
+                    "default": "h1",
+                    "label": "Check or X?"
+                }
+            ]
+        }
+    ],
+    "presets": [
+    {
+      "name": "Comparison (Icons Only)",
+      "category": "comparison"
+    }
+  ]
+  }
+{% endschema %}
