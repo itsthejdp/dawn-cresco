@@ -36,6 +36,7 @@
         "button"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/pexels-guy-kawasaki-1654527.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-left",
@@ -107,7 +108,7 @@
         "heading_U8Vc8F": {
           "type": "heading",
           "settings": {
-            "heading": "Convenient Content Creation. Anywhere.",
+            "heading": "Boardshorts",
             "heading_size": "h1"
           }
         }
