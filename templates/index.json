@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "image_banner": {
@@ -6,7 +15,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Save the Planet.",
+            "heading": "Stay Eco-friendly and Stoked",
             "heading_size": "h0"
           }
         },
@@ -27,7 +36,6 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/WhatsApp_Image_2024-03-03_at_09.47.11_3.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-left",
@@ -77,7 +85,6 @@
         "column_hQPMzn"
       ],
       "settings": {
-        "desktop_content_position": "center",
         "title": "Transform Your Fashion Game",
         "heading_size": "h1",
         "image_width": "full",
@@ -123,7 +130,6 @@
         "row_WmD93g": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/6896b182-d02a-4f97-bc83-672525bb1b0e.jpg",
             "caption": "",
             "heading": "Designed for Convenience",
             "text": "<p>Designed to be discreet and portable, the<br\/>MULTIMAG easily fits into your pocket, making it the perfect accessory for<br\/>creators on the go who value both functionality and convenience.<\/p>",
@@ -134,7 +140,6 @@
         "row_wUNrxn": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/WhatsApp_Image_2024-03-01_at_11.24.02.jpg",
             "caption": "",
             "heading": "Easy Setup",
             "text": "<p>Find a metal surface, throw your Multimag in, and film.<\/p>",
@@ -195,7 +200,6 @@
         "button_ExDPyw"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/f0836e20-106b-4d7f-a512-fb92796ea7a9.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -216,7 +220,6 @@
         "row_BPCKYR": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/e6f71126-438d-4673-b318-364af2a8b5a8.jpg",
             "caption": "",
             "heading": "<strong>Dual 360° Swivel Mechanism<\/strong>",
             "text": "<p>With two pivot points for complete rotational freedom, the MULTIMAG ensures you can quickly find the best angles for your shots, whether you're recording a workout, a culinary masterpiece, or a scenic drive.<\/p>",
@@ -227,7 +230,6 @@
         "row_3NY4K7": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/4a5e25ff-0c35-419d-85a7-2f8d4f2b6ab8.jpg",
             "caption": "",
             "heading": "<strong>Ultra-Strong N52 Magnets<\/strong>",
             "text": "<p>Engineered for stability, and stronger than N50 Magnets, its predecessor, the MULTIMAG attaches securely to any metal surface, providing peace of mind so you can create with confidence.<\/p>",
@@ -238,7 +240,6 @@
         "row_W3YQJG": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/WhatsApp_Image_2024-03-01_at_11.24.03_2.jpg",
             "caption": "",
             "heading": "Portable Size",
             "text": "<p>Ultra-portable size that makes it easy for you to carry it around when creating videos.<\/p>",
@@ -345,19 +346,16 @@
         "image_AQAKnz": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/C9B482F3-8DDC-41E4-81AD-491F043EFFEC.jpg"
           }
         },
         "image_9hMUXM": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/53E074E6-B5A5-4D25-B48A-90536A0F51FB.jpg"
           }
         },
         "image_hxnD7r": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/08D3291A-ACBE-4E71-B17E-D27B353FBC57.jpg"
           }
         }
       },
@@ -412,7 +410,6 @@
         "buttons_qgt7Ck"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/WhatsApp_Image_2024-03-03_at_09.49.07_1.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "middle-center",
