@@ -1,0 +1,24 @@
+{{ 'block-testimonial.css' | asset_url | stylesheet_tag }}
+
+<div class="testimonial_product_block" {{ block.shopify_attributes }} >
+  {% if block.settings.show_image %}
+      <div class="block_img-section">
+      {% if block.settings.testimonial_image != blank %}            
+          <img class="block_reviewer_img" src=" {{ block.settings.testimonial_image |  image_url   }}" />
+      {% else %}
+          <img src="https://cdn.shopify.com/s/files/1/0692/2118/7820/files/coach-fabio.jpg?v=1710462252" alt="" class="block_reviewer_img">
+      {% endif %}
+      </div>
+  {% else %}
+    <div class="block_review_content_div">
+        <p class="testimonial-content-body"> "{{ block.settings.testimonial }}"</p>
+        <p class="block_testimonial_giver"> {{ block.settings.testimonial_giver }} </p>
+        <p class="block_testimonial_title"> {{ block.settings.testimonial_title }} </p>      
+        <span class="rating-icon"> &#9733; &#9733; &#9733; &#9733; &#9733; </span>       
+      <!-- <div class="block_ver_cus">
+          {% render 'check-icon' %}
+          <p class="block_verified_text">VERIFIED CUSTOMER</p>
+      </div>     -->
+  </div>
+  {% endif %}
+</div>
