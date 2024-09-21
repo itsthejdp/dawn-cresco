@@ -15,6 +15,36 @@
   .drawer {
     visibility: hidden;
   }
+  
+  .shipping-progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    margin: 10px 0;
+  }
+  
+  .shipping-progress {
+    height: 20px;
+    background-color: #4CAF50;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+  }
+  
+  .upsell-products {
+    margin-top: 20px;
+  }
+  
+  .upsell-product {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .upsell-product img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
 </style>
 
 <cart-drawer class="drawer{% if cart == empty %} is-empty{% endif %}">
@@ -70,6 +100,20 @@
           {% render 'icon-close' %}
         </button>
       </div>
+      
+      {% comment %} Shipping Progress Bar {% endcomment %}
+      <div class="shipping-progress-bar">
+        {% assign free_shipping_threshold = 100 %}
+        {% assign progress_percentage = cart.total_price | divided_by: free_shipping_threshold | times: 100 | at_most: 100 %}
+        <div class="shipping-progress" style="width: {{ progress_percentage }}%;">
+          {% if progress_percentage < 100 %}
+            {{ 'Add ' | append: free_shipping_threshold | minus: cart.total_price | money | append: ' for free shipping' }}
+          {% else %}
+            You've got free shipping!
+          {% endif %}
+        </div>
+      </div>
+      
       <cart-drawer-items
         {% if cart == empty %}
           class=" is-empty"
@@ -447,6 +491,27 @@
           <div id="CartDrawer-CartErrors" role="alert"></div>
         </form>
       </cart-drawer-items>
+      
+      {% comment %} Product Upsells {% endcomment %}
+      <div class="upsell-products">
+        <h3>You might also like:</h3>
+        {% for product in collections.all.products limit:3 %}
+          {% unless cart.items contains product %}
+            <div class="upsell-product">
+              <img src="{{ product.featured_image | img_url: '50x50' }}" alt="{{ product.title }}">
+              <div>
+                <p>{{ product.title }}</p>
+                <p>{{ product.price | money }}</p>
+                <form action="/cart/add" method="post">
+                  <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+                  <input type="submit" value="Add to cart" class="button" />
+                </form>
+              </div>
+            </div>
+          {% endunless %}
+        {% endfor %}
+      </div>
+      
       <div class="drawer__footer">
         {%- if settings.show_cart_note -%}
           <details id="Details-CartDrawer">

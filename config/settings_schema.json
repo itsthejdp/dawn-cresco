@@ -1463,6 +1463,55 @@
         "id": "cart_color_scheme",
         "label": "t:sections.all.colors.label",
         "default": "scheme-1"
+      },
+      {
+        "type": "header",
+        "content": "You might also like"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_upsell_products",
+        "label": "Show upsell products",
+        "default": true
+      },
+      {
+        "type": "product_list",
+        "id": "upsell_products",
+        "label": "Choose upsell products",
+        "limit": 5
+      },
+      {
+        "type": "header",
+        "content": "Shipping Progress Bar"
+      },
+      {
+        "type": "number",
+        "id": "shipping_threshold",
+        "label": "Free shipping threshold",
+        "default": 100,
+        "info": "Minimum cart total for free shipping"
+      },
+      {
+        "type": "color",
+        "id": "progress_bar_background",
+        "label": "Progress bar background color",
+        "default": "#e0e0e0"
+      },
+      {
+        "type": "color",
+        "id": "progress_bar_fill",
+        "label": "Progress bar fill color",
+        "default": "#4CAF50"
+      },
+      {
+        "type": "range",
+        "id": "progress_bar_height",
+        "min": 10,
+        "max": 50,
+        "step": 2,
+        "unit": "px",
+        "label": "Progress bar height",
+        "default": 20
       }
     ]
   }
